@@ -12,9 +12,9 @@ options.forEach((option) => {
          compImg.classList.remove("shakeComputer");
          userImg.classList.remove("shakePlayer");
 
-         userImg.src = option.innerHTML + "Player.png";
+         userImg.src = "./" + option.innerText + "Player.png";
          let n = Math.floor(Math.random()*3);
-         let cChoice = options[n].innerHTML;
+         let cChoice = options[n].innerText;
          compImg.src = "./" + cChoice + "Computer.png";
          let uChoice = option.innerHTML;
 
