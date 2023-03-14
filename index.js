@@ -40,9 +40,7 @@ options.forEach((option) => {
 
          compPoints.innerHTML = cPoints;
          userPoints.innerHTML = uPoints;
-        },1900);
-        
-          setTimeout(()=>{
+                   setTimeout(()=>{
              userImg.src = "./stonePlayer.png";
              compImg.src = "./stoneComputer.png";
 
@@ -59,5 +57,7 @@ options.forEach((option) => {
          compPoints.innerHTML = cPoints;
          userPoints.innerHTML = uPoints;
          },1000);
+        },1900);
+        
     });
 });
