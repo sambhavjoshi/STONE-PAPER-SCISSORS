@@ -7,8 +7,13 @@ options.forEach((option) => {
     option.addEventListener("click",()=>{
         compImg.classList.add("shakeComputer");
         userImg.classList.add("shakePlayer");
-
-        setTimeout(()=>{
+        
+        
+        let cPoints = Number(compPoints.innerHTML);
+         let uPoints = Number(userPoints.innerHTML);
+        
+        
+         setTimeout(()=>{
          compImg.classList.remove("shakeComputer");
          userImg.classList.remove("shakePlayer");
 
@@ -18,8 +23,6 @@ options.forEach((option) => {
          compImg.src = "./" + cChoice + "Computer.png";
          let uChoice = option.innerHTML;
 
-         let cPoints = Number(compPoints.innerHTML);
-         let uPoints = Number(userPoints.innerHTML);
 
          if(uChoice == "stone"){
             if(cChoice == "paper") cPoints++;
@@ -37,8 +40,9 @@ options.forEach((option) => {
 
          compPoints.innerHTML = cPoints;
          userPoints.innerHTML = uPoints;
-         
-         setTimeout(()=>{
+        },900);
+        
+          setTimeout(()=>{
              userImg.src = "./stonePlayer.png";
              compImg.src = "./stoneComputer.png";
 
@@ -54,7 +58,6 @@ options.forEach((option) => {
          }
          compPoints.innerHTML = cPoints;
          userPoints.innerHTML = uPoints;
-         },1000)
-        },900);
+         },1000);
     });
 });
