@@ -21,17 +21,17 @@ options.forEach((option) => {
          let cPoints = Number(compPoints.innerHTML);
          let uPoints = Number(userPoints.innerHTML);
 
-         if(uChoice == "STONE"){
-            if(cChoice == "PAPER") cPoints++;
-            else if(cChoice == "SCISSORS") uPoints++;
+         if(uChoice == "stone"){
+            if(cChoice == "paper") cPoints++;
+            else if(cChoice == "scissors") uPoints++;
          }
-         else if(uChoice == "PAPER"){
-            if(cChoice == "SCISSORS") cPoints++;
-            else if(cChoice == "STONE") uPoints++;
+         else if(uChoice == "paper"){
+            if(cChoice == "scissors") cPoints++;
+            else if(cChoice == "stone") uPoints++;
          }
          else{
-            if(cChoice == "STONE") cPoints++;
-            else if(cChoice == "PAPER") uPoints++;
+            if(cChoice == "stone") cPoints++;
+            else if(cChoice == "paper") uPoints++;
          }
 
 
