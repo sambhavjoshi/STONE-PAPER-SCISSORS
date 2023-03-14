@@ -1,0 +1,100 @@
+body{
+    background-color: #353333;
+    color: rgba(153, 255, 0, 0.645);
+    font-style: "Arvo",cursive;
+}
+.container{
+    margin: 7em;
+}
+.message{
+    margin : 3em 0 2em;
+    text-align: center;
+    font-size: 2em;
+}
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    height: 200px;/* because we do not want the size to change but scissors size > rock size*/
+}
+.computer img,.user img{
+   width : 80%;
+}
+.shakeComputer{
+    animation: shakeComp 0.8s ease-out;
+}
+.shakePlayer{
+    animation: shakeUser 0.8s ease-out;
+}
+.score{
+    margin: 2em 0 4em;
+    text-align: center;
+}
+.compPoints{
+    margin-left :3em;
+}
+.userPoints{
+    margin-right: 3em;
+}
+.options{
+    margin-top: 5em;
+    text-align: center;
+    justify-content: space-around;
+    display : flex;
+}
+.options button{
+   background-color: blanchedalmond;
+   color:blueviolet;
+   font-family: "Arvo",cursive;
+   border: 2px solid violet; 
+   border-radius: 8px;
+   padding : 1.5em 3em;
+   width : 150px;
+   white-space : nowrap;
+   cursor: pointer;
+   outline: yellow;
+   outline-style: solid;
+   outline-width: 2px;
+ /*  transition: 0.2s all linear;*/
+}
+.options button:hover{
+    background-color: rgb(43, 157, 157);
+    border: 1px solid rgb(43, 157, 157);
+    outline : rgb(11, 141, 141);
+    color:rgb(72, 255, 0);
+}
+@keyframes shakeComp{
+    0% {
+        transform : rotate(-30deg);
+    }
+    25%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(-30deg);
+    }
+    75%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes shakeUser{
+    0% {
+        transform : rotate(30deg);
+    }
+    25%{
+        transform: rotate(-30deg);
+    }
+    50%{
+        transform: rotate(30deg);
+    }
+    75%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
