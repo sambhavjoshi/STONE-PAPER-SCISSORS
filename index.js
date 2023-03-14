@@ -54,7 +54,7 @@ options.forEach((option) => {
          }
          compPoints.innerHTML = cPoints;
          userPoints.innerHTML = uPoints;
-         },200)
+         },1000)
         },900);
     });
 });
